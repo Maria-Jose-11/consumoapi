@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Consumo WEB SERVICE Sonar</title>
+</head>
+<body>
+    <script>
+      let url = 'http://sonaravl.com/webservices/GET_LastLocation';
+        fetch(url)
+            .then( response => response.json() )
+            .then( data => mostrarData(data) )
+            .catch( error => console.log(error) )
+
+        const mostrarData = (data) => {
+            console.log(data)
+            }
+            document.getElementById('data').innerHTML = body
+            //console.log(body)
+        }
+    </script>
+</body>
+</html>
